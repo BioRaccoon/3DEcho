@@ -24,6 +24,7 @@ namespace StarterAssets
 		public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
+			this.gameObject.GetComponent<SoundWaves>().MyAction();
 		}
 
 		public void OnLook(InputValue value)

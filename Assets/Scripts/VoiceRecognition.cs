@@ -11,6 +11,7 @@ public class VoiceRecognition : MonoBehaviour
     private Dictionary<string, Action> stringToAction = new Dictionary<string, Action>();
     private Vector3 newPosition;
     private bool keyword = false;
+
     void Start()
     {
         newPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -38,18 +39,22 @@ public class VoiceRecognition : MonoBehaviour
     private void Forward()
     {
         newPosition = transform.position + Camera.main.transform.forward * 2;
+        this.gameObject.GetComponent<SoundWaves>().MyAction();
     }
     private void Back()
     {
         newPosition = transform.position - Camera.main.transform.forward * 2;
+        this.gameObject.GetComponent<SoundWaves>().MyAction();
     }
     private void Right()
     {
         newPosition = transform.position + Camera.main.transform.right * 2;
+        this.gameObject.GetComponent<SoundWaves>().MyAction();
     }
     private void Left()
     {
         newPosition = transform.position - Camera.main.transform.right * 2;
+        this.gameObject.GetComponent<SoundWaves>().MyAction();
     }
 
     private void Update()

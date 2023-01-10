@@ -28,7 +28,7 @@ public class SoundWaves : MonoBehaviour
         }
     }
 
-    void MyAction()
+    public void MyAction()
     {
         //Output message to the console
         //Debug.Log("Do Stuff");
