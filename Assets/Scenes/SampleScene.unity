@@ -168,25 +168,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a71d67f0690c1e48bc85605989fdbb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 10, y: 10}
+  size: {x: 11, y: 11}
   startPos: 0
   rooms:
-  - room: {fileID: 2607743343168213222, guid: 3dd2ab05e987fb548a69967d61fa0ed7, type: 3}
+  - room: {fileID: 2607743343168213222, guid: ef2241098da33264eb857d20a75ef99c, type: 3}
     minPosition: {x: 0, y: 0}
+    maxPosition: {x: 9, y: 9}
+    obligatory: 1
+  - room: {fileID: 2607743343168213222, guid: 28018a3c75a188046bce881b0448b7a6, type: 3}
+    minPosition: {x: 10, y: 10}
     maxPosition: {x: 10, y: 10}
-    obligatory: 0
-  - room: {fileID: 2607743343168213222, guid: d90397ff892f0344cbd241a3b93cd7f4, type: 3}
-    minPosition: {x: 0, y: 0}
-    maxPosition: {x: 10, y: 10}
-    obligatory: 0
-  - room: {fileID: 2607743343168213222, guid: bc377f01168933f4abffc0fd1ba8efdd, type: 3}
-    minPosition: {x: 0, y: 0}
-    maxPosition: {x: 10, y: 10}
-    obligatory: 0
-  - room: {fileID: 2607743343168213222, guid: 0f4c61df9b8d9a544accfc8d0187034d, type: 3}
-    minPosition: {x: 0, y: 0}
-    maxPosition: {x: 10, y: 10}
-    obligatory: 0
+    obligatory: 1
   offset: {x: 6, y: 6}
 --- !u!95 &95046356
 Animator:
