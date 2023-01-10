@@ -33,6 +33,7 @@ public class SoundWaves : MonoBehaviour
         //Output message to the console
         //Debug.Log("Do Stuff");
         wave = Instantiate(objectName, transform.position,objectName.transform.rotation);
+        wave.transform.localScale=new Vector3(1,1,1);
 
         Debug.Log(wave.transform.localScale.y);
 
